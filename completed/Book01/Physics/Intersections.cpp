@@ -89,7 +89,7 @@ bool Intersect( Body * bodyA, Body * bodyB, contact_t & contact ) {
 		contact.ptOnA_LocalSpace = bodyA->WorldSpaceToBodySpace( contact.ptOnA_WorldSpace );
 		contact.ptOnB_LocalSpace = bodyB->WorldSpaceToBodySpace( contact.ptOnB_WorldSpace );
 
-		Vec3 ab = bodyB->m_position - bodyA->m_position;
+		//Vec3 ab = bodyB->m_position - bodyA->m_position;  // not used
 		float r = ( ptOnA - ptOnB ).GetMagnitude();
 		contact.separationDistance = r;
 	}
